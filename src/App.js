@@ -1,12 +1,13 @@
 import React from "react";
-import "./App.css";
+import "./App.scss";
 import Zoom from "react-reveal/Zoom";
+import { Navbar } from "./components/navbar";
 
 function App() {
   return (
     <div className="App">
       <Zoom>
-        <button className={"btn btn-primary"}>Testing</button>
+        <Navbar />
       </Zoom>
     </div>
   );
