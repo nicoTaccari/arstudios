@@ -6,47 +6,51 @@ export const Navbar = () => {
   const [collapsed, setcollapsed] = useState(true);
 
   return (
-    <nav className="navbar navbar-light bg-light">
+    <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <a className="navbar-brand" href="#">
-        <img
-          src="/docs/4.4/assets/brand/bootstrap-solid.svg"
-          width="30"
-          height="30"
-          className="d-inline-block align-top"
-          alt=""
-        />
         April Road Studios
       </a>
+
       <button
-        className="navbar-toggler d-block d-xl-none"
-        type="button"
         onClick={() => setcollapsed(!collapsed)}
+        class="navbar-toggler"
+        type="button"
         data-toggle="collapse"
-        data-target="#navbarNavAltMarkup"
-        aria-controls="navbarNavAltMarkup"
+        data-target="#navbarTogglerDemo02"
+        aria-controls="navbarTogglerDemo02"
         aria-expanded="false"
         aria-label="Toggle navigation"
       >
-        <span className="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon"></span>
       </button>
+
       <Fade>
         <div
-          className={`collapse navbar-collapse d-xl-none ${
-            collapsed ? "" : "show"
-          }`}
+          className={`collapse navbar-collapse ${collapsed ? "" : "show"}`}
           id="navbarNavAltMarkup"
         >
-          <div className="navbar-nav">
-            <a className="nav-item nav-link active" href="#">
-              Home <span className="sr-only">(current)</span>
-            </a>
-            <a className="nav-item nav-link" href="#">
-              Features
-            </a>
-            <a className="nav-item nav-link" href="#">
-              Pricing
-            </a>
-          </div>
+          <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li className="nav-item active">
+              <a className="nav-link" href="#">
+                Home <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#">
+                Link
+              </a>
+            </li>
+            <li className="nav-item">
+              <a
+                className="nav-link disabled"
+                href="#"
+                tabindex="-1"
+                aria-disabled="true"
+              >
+                Disabled
+              </a>
+            </li>
+          </ul>
         </div>
       </Fade>
     </nav>
