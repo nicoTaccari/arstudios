@@ -13,7 +13,7 @@ export const Navbar = () => {
 
       <button
         onClick={() => setcollapsed(!collapsed)}
-        class="navbar-toggler"
+        className="navbar-toggler"
         type="button"
         data-toggle="collapse"
         data-target="#navbarTogglerDemo02"
@@ -21,7 +21,7 @@ export const Navbar = () => {
         aria-expanded="false"
         aria-label="Toggle navigation"
       >
-        <span class="navbar-toggler-icon"></span>
+        <span className="navbar-toggler-icon"></span>
       </button>
 
       <Fade>
@@ -32,7 +32,7 @@ export const Navbar = () => {
           <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
             <li className="nav-item active">
               <a className="nav-link" href="#">
-                Home <span class="sr-only">(current)</span>
+                Home <span className="sr-only">(current)</span>
               </a>
             </li>
             <li className="nav-item">
@@ -44,7 +44,7 @@ export const Navbar = () => {
               <a
                 className="nav-link disabled"
                 href="#"
-                tabindex="-1"
+                tabIndex="-1"
                 aria-disabled="true"
               >
                 Disabled
