@@ -1,12 +1,18 @@
 import React, { useEffect, useState } from "react";
-import { YOUTUBE_URL } from "../../Constants";
+import YotubeService from "../../services/youtube";
+import { VideosCarousel } from "../carousel";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 
 export const Youtube = () => {
   const [videos, setvideos] = useState([]);
+  const description =
+    " Ultimas Grabaciones en nuestro estudio. Te estamos esperando para realizar tu proxima creacion!";
+  const title = "Live Sessions";
 
   useEffect(() => {
-    fetch(YOUTUBE_URL)
-      .then(response => response.json())
+    YotubeService.getVideos()
       .then(responseJson => {
         // console.log(responseJson.items);
         setvideos(
@@ -19,29 +25,20 @@ export const Youtube = () => {
   }, []);
 
   return (
-    <div>
-      {videos.length > 0 ? (
-        videos.map((link, x) => {
-          let frame = (
-            <div class="embed-responsive embed-responsive-4by3">
-              <iframe
-                title="video"
-                key={x}
-                class="embed-responsive-item"
-                src={link}
-                allowfullscreen
-              ></iframe>
-            </div>
-          );
-          return frame;
-        })
-      ) : (
-        <div className="d-flex justify-content-center">
-          <div className="spinner-border" role="status">
-            <span className="sr-only">Loading...</span>
+    <div className="container">
+      <div className="row pt-4 pb-4">
+        <div className="col">
+          <h1>{title}</h1>
+          <div className="description">
+            <p>{description}</p>
           </div>
         </div>
-      )}
+      </div>
+      <div className="row">
+        <div className="col">
+          <VideosCarousel videos={videos} />
+        </div>
+      </div>
     </div>
   );
 };
