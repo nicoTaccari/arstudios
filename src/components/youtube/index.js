@@ -1,9 +1,6 @@
 import React, { useEffect, useState } from "react";
 import YotubeService from "../../services/youtube";
 import { VideosCarousel } from "../carousel";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
 
 export const Youtube = () => {
   const [videos, setvideos] = useState([]);

@@ -108,5 +108,25 @@
   }
 }
 
+.jumbotron{
+  background-image: url("./assets/images/jumboBack.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 800px;
+}
+
+.service-image {
+  background-size: cover;
+}
+
+/***** Divider *****/
+
+.divider span { display: inline-block; width: 200px; border-bottom: 1px dotted #aaa; }
+.section-container { margin: 0 auto; padding-bottom: 80px; }
+
+.section-description { margin-top: 60px; padding-bottom: 10px; }
+
+.section-description p { margin-top: 20px; padding: 0 120px; }
+
 // Import Bootstrap and its default variables
 @import "~bootstrap/scss/bootstrap.scss";
