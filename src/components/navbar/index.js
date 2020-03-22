@@ -1,64 +1,51 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
-import React, { useState } from "react";
-import Fade from "react-reveal/Fade";
+import React from "react";
 
 export const Navbar = () => {
-  const [collapsed, setcollapsed] = useState(true);
-
   return (
-    <nav className="navbar navbar-dark navbar-expand-md navbar-no-bg">
-      <div className="container">
-        <a className="navbar-brand" href="#">
+    <nav
+      class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light"
+      id="ftco-navbar"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
           April Road Studios
         </a>
-
         <button
-          onClick={() => setcollapsed(!collapsed)}
-          className="navbar-toggler"
+          class="navbar-toggler"
           type="button"
           data-toggle="collapse"
-          data-target="#navbarNav"
-          aria-controls="navbarNav"
+          data-target="#ftco-nav"
+          aria-controls="ftco-nav"
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span className="navbar-toggler-icon"></span>
+          <span class="oi oi-menu"></span> Menu
         </button>
 
-        <Fade>
-          <div
-            className={`collapse navbar-collapse ${collapsed ? "" : "show"}`}
-            id="navbarNavAltMarkup"
-          >
-            <ul className="navbar-nav ml-auto">
-              <li className="nav-item">
-                <a className="nav-link scroll-link" href="#top-content">
-                  Top
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link scroll-link" href="#section-1">
-                  Servicios
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link scroll-link" href="#section-2">
-                  Specs
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link scroll-link" href="#section-3">
-                  Contacto
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link scroll-link" href="#section-4">
-                  About
-                </a>
-              </li>
-            </ul>
-          </div>
-        </Fade>
+        <div class="collapse navbar-collapse" id="ftco-nav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a href="about.html" class="nav-link">
+                About
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="solutions.html" class="nav-link">
+                Servicios
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="blog.html" class="nav-link">
+                Sessions
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link">
+                Contact
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
   );

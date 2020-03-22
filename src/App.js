@@ -1,27 +1,28 @@
 import React from "react";
 import "./App.scss";
-import Zoom from "react-reveal/Zoom";
-import { Navbar } from "./components/navbar";
+import Fade from "react-reveal/Fade";
 import { Youtube } from "./components/youtube";
 import { Rider } from "./components/rider";
 import { Calendar } from "./components/calendar";
 import { Contact } from "./components/contact";
 import { Servicios } from "./components/servicios";
 import { Jumbo } from "./components/jumbo";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <Zoom>
-        <Navbar />
-        <Jumbo />
-        <Servicios />
-        <Youtube />
-        <Calendar />
-        <Rider />
-        <Contact />
-      </Zoom>
-    </div>
+    <Router>
+      <div className="App">
+        <Fade>
+          <Jumbo />
+          <Servicios />
+          <Youtube />
+          <Calendar />
+          <Rider />
+          <Contact />
+        </Fade>
+      </div>
+    </Router>
   );
 }
 
