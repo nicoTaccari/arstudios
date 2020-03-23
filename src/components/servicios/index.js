@@ -14,7 +14,7 @@ export const Servicios = () => {
             <h2>Recent Works</h2>
           </div>
         </div>
-        <div class="row no-gutters">
+        <div class="row no-gutters justify-content-center pl-0 pr-0">
           <Service image={Console} />
 
           <Service image={Micro} right={true} />

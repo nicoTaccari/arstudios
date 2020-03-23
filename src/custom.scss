@@ -17,7 +17,10 @@
     transition:         all $transition ease;
 }
 
-
+.container-fluid {
+	padding-right:0 !important;
+    padding-left:0 !important;
+}
 
 // /***** Top menu *****/
 
@@ -387,6 +390,7 @@ header {
 }
 
 .block-3 {
+	min-width: 100%;
 	.text, .image {
 		width: 100%;
 		padding: 10% 7%;

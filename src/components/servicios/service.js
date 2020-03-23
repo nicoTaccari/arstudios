@@ -8,7 +8,7 @@ const backImage = image => {
 
 export const Service = props => {
   return (
-    <div class="block-3 d-md-flex">
+    <div class="block-3 d-md-flex ftco-animate">
       <div
         className={props.right ? "image order-2" : "image"}
         style={backImage(props.image)}
