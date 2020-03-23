@@ -2,60 +2,26 @@ import React from "react";
 import Console from "../../assets/images/console.jpg";
 import Camera from "../../assets/images/camera.jpg";
 import Micro from "../../assets/images/micro.jpg";
+import { Service } from "./service";
 
 export const Servicios = () => {
   return (
-    <div className="section-container">
-      <div className="row">
-        <div class="col section-1 section-description">
-          <h2>Nuestros Servicios</h2>
+    <section class="ftco-section">
+      <div class="container-fluid">
+        <div class="row no-gutters justify-content-center mb-5 pb-5">
+          <div class="col-md-7 text-center heading-section">
+            <span class="subheading">Works</span>
+            <h2>Recent Works</h2>
+          </div>
+        </div>
+        <div class="row no-gutters">
+          <Service image={Console} />
+
+          <Service image={Micro} right={true} />
+
+          <Service image={Camera} />
         </div>
       </div>
-      <div className="row">
-        <div className="col-sm-12 col-md-4">
-          <div class="card m-3">
-            <img
-              class="card-img-top service-image"
-              src={Console}
-              alt="Card cap"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Card title that wraps to a new line</h5>
-              <p class="card-text">
-                This is a longer card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div className="col-sm-12 col-md-4">
-          <div class="card m-3">
-            <img class="card-img-top" src={Camera} alt="Card cap" />
-            <div class="card-body">
-              <h5 class="card-title">Card title that wraps to a new line</h5>
-              <p class="card-text">
-                This is a longer card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div className="col-sm-12 col-md-4">
-          <div class="card m-3">
-            <img class="card-img-top" src={Micro} alt="Card cap" />
-            <div class="card-body">
-              <h5 class="card-title">Card title that wraps to a new line</h5>
-              <p class="card-text">
-                This is a longer card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    </section>
   );
 };

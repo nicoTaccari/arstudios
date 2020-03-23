@@ -333,14 +333,96 @@ header {
   background-size: cover;
 }
 
-/***** Divider *****/
+.react-rotating-text-cursor {
+	animation: blinking-cursor 0.8s cubic-bezier(0.68, 0.01, 0.01, 0.99) 0s infinite;
+  }
+  
+  @keyframes blinking-cursor {
+	0% {
+	  opacity: 0;
+	}
+	50% {
+	  opacity: 1;
+	}
+	100% {
+	  opacity: 0;
+	}
+  }
 
-.divider span { display: inline-block; width: 200px; border-bottom: 1px dotted #aaa; }
-.section-container { margin: 0 auto; padding-bottom: 80px; }
+//Servicios
 
-.section-description { margin-top: 60px; padding-bottom: 10px; }
+.ftco-section {
+	padding: 8em 0;
+	position: relative;
+	@include media-breakpoint-down(sm){
+		padding: 6em 0;
+	}
+}
 
-.section-description p { margin-top: 20px; padding: 0 120px; }
+.heading-section{
+	.subheading{
+		font-size: 12px;
+		text-transform: uppercase;
+		font-weight: 400;
+		letter-spacing: 1px;
+		color: rgba(0,0,0,.2);
+	}
+	h2{
+		font-size: 34px;
+		font-weight: 400;
+		@include media-breakpoint-down(sm){
+			font-size: 28px;
+		}
+	}
+	&.heading-section-white{
+		.subheading{
+			color: rgba(255,255,255,.7);
+		}
+		h2{
+			font-size: 40px;
+			color: $white;
+			font-weight: 300 !important;
+		}
+	}
+}
+
+.block-3 {
+	.text, .image {
+		width: 100%;
+		padding: 10% 7%;
+		display: block;
+		@include media-breakpoint-up(md) {
+			width: 100%;
+			padding: 10% 7%;	
+		}
+	}
+	.text {
+		background: #f8faff;
+		.subheading {
+			font-size: 13px;
+			text-transform: uppercase;
+			letter-spacing: .1em;
+			color: darken(#E7EFF3, 20%);
+		}
+		.heading {
+			font-size: 30px;
+			margin-bottom: 30px;
+		}
+		p {
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+	.image {
+		background-size: cover;
+		background-position: center center;
+		background-repeat: no-repeat;
+		@include media-breakpoint-down(sm) {
+			height: 300px;
+		}
+	}
+}
 
 // Import Bootstrap and its default variables
 @import "~bootstrap/scss/bootstrap.scss";
