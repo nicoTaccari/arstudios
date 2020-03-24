@@ -186,6 +186,11 @@
 	}
 }
 
+.navbar-scrolled {
+	z-index: 9999;
+    background-color: #333333;
+}
+
 /*****Header*****/
 header {
 	position: relative;
