@@ -6,12 +6,14 @@ import { Service } from "./service";
 
 export const Servicios = () => {
   return (
-    <section class="ftco-section">
+    <section class="section">
       <div class="container-fluid">
-        <div class="row no-gutters justify-content-center mb-5 pb-5">
-          <div class="col-md-7 text-center heading-section">
-            <span class="subheading">Works</span>
-            <h2>Recent Works</h2>
+        <div class="row no-gutters justify-content-center mb-5">
+          <div class="col-md-8 text-center mb-5 heading">
+            <h2 class="text-uppercase heading border-bottom mb-4">servicios</h2>
+            <p className="mb-0 lead">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            </p>
           </div>
         </div>
         <div class="row no-gutters justify-content-center pl-0 pr-0">

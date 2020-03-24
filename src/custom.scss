@@ -126,7 +126,7 @@
 		left: 0;
 		top: 0;
 		margin-top: -130px;
-		background: $white!important;
+		background: $whitesmoke!important;
 		box-shadow: 0 0 10px 0 rgba(0,0,0,.1);
 		.nav-item {
 			&.active {
@@ -184,11 +184,6 @@
 			color: $black;
 		}
 	}
-}
-
-.navbar-scrolled {
-	z-index: 9999;
-    background-color: #333333;
 }
 
 /*****Header*****/
@@ -359,37 +354,38 @@ header {
 
 //Servicios
 
-.ftco-section {
-	padding: 8em 0;
+.section {
+	padding: 7em 0;
 	position: relative;
 	@include media-breakpoint-down(sm){
 		padding: 6em 0;
 	}
+	.bg-light {
+		background: $whitesmoke !important;
+	}
 }
 
-.heading-section{
-	.subheading{
-		font-size: 12px;
-		text-transform: uppercase;
-		font-weight: 400;
-		letter-spacing: 1px;
-		color: rgba(0,0,0,.2);
-	}
-	h2{
-		font-size: 34px;
-		font-weight: 400;
-		@include media-breakpoint-down(sm){
-			font-size: 28px;
+.heading {
+	color: $black;
+	&.border-bottom {
+		position: relative;
+		padding-bottom: 30px;
+		border-bottom: none!important;
+		&:before {
+			bottom: 0;
+			position: absolute;
+			content: "";
+			width: 50px;
+			height: 2px;
+			left: 50%;
+			transform: translateX(-50%);
+			background: $blue;
 		}
-	}
-	&.heading-section-white{
-		.subheading{
-			color: rgba(255,255,255,.7);
-		}
-		h2{
-			font-size: 40px;
-			color: $white;
-			font-weight: 300 !important;
+		&.text-left {
+			&:before {
+				left: 0;
+				transform: translateX(0);
+			}
 		}
 	}
 }

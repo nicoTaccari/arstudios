@@ -22,20 +22,20 @@ export const Youtube = () => {
   }, []);
 
   return (
-    <div className="container">
-      <div className="row pt-4 pb-4">
-        <div className="col">
-          <h1>{title}</h1>
-          <div className="description">
-            <p>{description}</p>
+    <section className="section">
+      <div className="container">
+        <div className="row justify-content-center mb-5">
+          <div className="col-md-8 text-center mb-5">
+            <h2 class="text-uppercase heading border-bottom mb-4">{title}</h2>
+            <p class="mb-0 lead">{description}</p>
+          </div>
+        </div>
+        <div className="row">
+          <div className="col">
+            <VideosCarousel videos={videos} />
           </div>
         </div>
       </div>
-      <div className="row">
-        <div className="col">
-          <VideosCarousel videos={videos} />
-        </div>
-      </div>
-    </div>
+    </section>
   );
 };
