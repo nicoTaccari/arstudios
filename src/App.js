@@ -8,6 +8,7 @@ import { Contact } from "./components/contact";
 import { Servicios } from "./components/servicios";
 import { BrowserRouter as Router } from "react-router-dom";
 import { Navbar } from "./components/navbar";
+import { About } from "./components/about";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Navbar />
         </header>
         <Fade>
+          <About />
           <Servicios />
           <Youtube />
           <Calendar />

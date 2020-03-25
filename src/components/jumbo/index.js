@@ -15,10 +15,10 @@ export const Jumbo = () => {
           type="video/mp4"
         />
       </video>
-      <div class="container h-100">
-        <div class="d-flex h-100 text-center align-items-center">
-          <div class="w-100 text-white">
-            <h1 class="mb-4">
+      <div className="container h-100">
+        <div className="d-flex h-100 text-center align-items-center">
+          <div className="w-100 text-white">
+            <h1 className="mb-4">
               We love to &nbsp;
               <strong>
                 <ReactRotatingText
@@ -27,11 +27,11 @@ export const Jumbo = () => {
                   emptyPause={1500}
                   pause={2000}
                 />
-                <span class="wrap"></span>
+                <span className="wrap"></span>
               </strong>
             </h1>
-            <h1 class="display-3">Video Header</h1>
-            <p class="lead mb-0">With HTML5 Video and Bootstrap 4</p>
+            <h1 className="display-3">Video Header</h1>
+            <p className="lead mb-0">With HTML5 Video and Bootstrap 4</p>
           </div>
         </div>
       </div>

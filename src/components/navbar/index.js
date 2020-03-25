@@ -10,14 +10,14 @@ export const Navbar = () => {
   console.log(scrolled);
   return (
     <>
-      <div class="overlay"></div>
-      <nav class={navClass} id="ftco-navbar">
-        <div class="container">
-          <a class="navbar-brand" href="index.html">
+      <div className="overlay"></div>
+      <nav className={navClass} id="ftco-navbar">
+        <div className="container">
+          <a className="navbar-brand" href="index.html">
             April Road Studios
           </a>
           <button
-            class="navbar-toggler"
+            className="navbar-toggler"
             type="button"
             data-toggle="collapse"
             data-target="#ftco-nav"
@@ -25,28 +25,28 @@ export const Navbar = () => {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="oi oi-menu"></span> Menu
+            <span className="oi oi-menu"></span> Menu
           </button>
 
-          <div class="collapse navbar-collapse" id="ftco-nav">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                <a href="about.html" class="nav-link">
+          <div className="collapse navbar-collapse" id="ftco-nav">
+            <ul className="navbar-nav ml-auto">
+              <li className="nav-item">
+                <a href="about.html" className="nav-link">
                   About
                 </a>
               </li>
-              <li class="nav-item">
-                <a href="solutions.html" class="nav-link">
+              <li className="nav-item">
+                <a href="solutions.html" className="nav-link">
                   Servicios
                 </a>
               </li>
-              <li class="nav-item">
-                <a href="blog.html" class="nav-link">
+              <li className="nav-item">
+                <a href="blog.html" className="nav-link">
                   Sessions
                 </a>
               </li>
-              <li class="nav-item">
-                <a href="contact.html" class="nav-link">
+              <li className="nav-item">
+                <a href="contact.html" className="nav-link">
                   Contact
                 </a>
               </li>

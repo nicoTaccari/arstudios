@@ -18,7 +18,7 @@ export const VideosCarousel = props => {
         videos.map((link, index) => {
           let frame = (
             <Carousel.Item>
-              <div class="embed-responsive embed-responsive-16by9">
+              <div className="embed-responsive embed-responsive-16by9">
                 <iframe
                   className="embed-responsive-item"
                   title="video"
