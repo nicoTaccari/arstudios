@@ -1,6 +1,8 @@
 import React from "react";
 import { useScroll } from "../../services/custom-hooks/on-scroll";
 import { Jumbo } from "../jumbo/index";
+import { HashLink as Link } from "react-router-hash-link";
+import Logo from "../../assets/images/logo.png";
 
 export const Navbar = () => {
   const scrolled = useScroll();
@@ -13,9 +15,16 @@ export const Navbar = () => {
       <div className="overlay"></div>
       <nav className={navClass} id="ftco-navbar">
         <div className="container">
-          <a className="navbar-brand" href="index.html">
-            April Road Studios
-          </a>
+          <Link className="navbar-brand" smooth to="#jumbo">
+            <img
+              src={Logo}
+              width="30"
+              height="30"
+              class="d-inline-block align-top"
+              alt=""
+            />
+            &nbsp; April Road Studios
+          </Link>
           <button
             className="navbar-toggler"
             type="button"
@@ -25,30 +34,40 @@ export const Navbar = () => {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span className="oi oi-menu"></span> Menu
+            <span className="navbar-toggler-icon"></span>
           </button>
 
           <div className="collapse navbar-collapse" id="ftco-nav">
             <ul className="navbar-nav ml-auto">
               <li className="nav-item">
-                <a href="about.html" className="nav-link">
+                <Link smooth to="#about" className="nav-link">
                   About
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a href="solutions.html" className="nav-link">
-                  Servicios
-                </a>
+                <Link smooth to="#services" className="nav-link">
+                  Services
+                </Link>
               </li>
               <li className="nav-item">
-                <a href="blog.html" className="nav-link">
-                  Sessions
-                </a>
+                <Link smooth to="#sessions" className="nav-link">
+                  Live Sessions
+                </Link>
               </li>
               <li className="nav-item">
-                <a href="contact.html" className="nav-link">
+                <Link smooth to="#calendar" className="nav-link">
+                  Calendar
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link smooth to="#rider" className="nav-link">
+                  Rider
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link smooth to="#contact" className="nav-link">
                   Contact
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

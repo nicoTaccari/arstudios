@@ -23,7 +23,7 @@ export const Youtube = () => {
   }, []);
 
   return (
-    <section className="section">
+    <section className="section" id="sessions">
       <div className="container">
         <SectionHeader title={title} subtitle={subtitle} />
         <div className="row">

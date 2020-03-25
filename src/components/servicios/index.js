@@ -10,7 +10,7 @@ export const Servicios = () => {
   const description =
     " Lorem ipsum dolor sit amet, consectetur adipisicing elit.";
   return (
-    <section className="section">
+    <section className="section" id="services">
       <div className="container-fluid">
         <SectionHeader title={title} subtitle={description} />
 

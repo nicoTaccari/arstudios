@@ -5,6 +5,7 @@ export const Jumbo = () => {
   return (
     <>
       <video
+        id="jumbo"
         playsInline="playsinline"
         autoPlay="autoplay"
         muted="muted"

@@ -7,7 +7,7 @@ export const Calendar = () => {
   const subtitle =
     "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi unde impedit, necessitatibus, soluta sit quam minima expedita  atque corrupti reiciendis.";
   return (
-    <section className="section bg-light">
+    <section className="section bg-light" id="calendar">
       <div className="container">
         <SectionHeader title={title} subtitle={subtitle} />
       </div>

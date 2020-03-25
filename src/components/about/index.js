@@ -6,7 +6,7 @@ export const About = () => {
   const subtitle =
     "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi unde impedit, necessitatibus, soluta sit quam minima expedita atque corrupti reiciendis.";
   return (
-    <section className="section bg-light">
+    <section className="section bg-light" id="about">
       <SectionHeader title={title} subtitle={subtitle} />
     </section>
   );
