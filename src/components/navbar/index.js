@@ -42,7 +42,7 @@ export const Navbar = () => {
             <ul className="navbar-nav ml-auto">
               <li className="nav-item">
                 <Link smooth to="#about" className="nav-link">
-                  About
+                  About us
                 </Link>
               </li>
               <li className="nav-item">

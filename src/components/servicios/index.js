@@ -6,7 +6,7 @@ import { Service } from "./service";
 import { SectionHeader } from "../../common/section-header/index";
 
 export const Servicios = () => {
-  const title = "servicios";
+  const title = "services";
   const description =
     " Lorem ipsum dolor sit amet, consectetur adipisicing elit.";
   return (
