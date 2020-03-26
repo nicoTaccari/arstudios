@@ -2,7 +2,8 @@ import React from "react";
 import { useScroll } from "../../services/custom-hooks/on-scroll";
 import { Jumbo } from "../jumbo/index";
 import { HashLink as Link } from "react-router-hash-link";
-import Logo from "../../assets/images/logo.png";
+import LogoWhiteTransparent from "../../assets/images/logo-white-transparent.png";
+import LogoBlackWhite from "../../assets/images/logo-black-white.png";
 
 export const Navbar = () => {
   const scrolled = useScroll();
@@ -17,10 +18,10 @@ export const Navbar = () => {
         <div className="container">
           <Link className="navbar-brand" smooth to="#jumbo">
             <img
-              src={Logo}
+              src={scrolled ? LogoBlackWhite : LogoWhiteTransparent}
               width="30"
               height="30"
-              class="d-inline-block align-top"
+              className="d-inline-block align-top"
               alt=""
             />
             &nbsp; April Road Studios
@@ -34,7 +35,7 @@ export const Navbar = () => {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span className="navbar-toggler-icon"></span>
+            <span className="navbar-toggler-icon pl-5"></span>
           </button>
 
           <div className="collapse navbar-collapse" id="ftco-nav">

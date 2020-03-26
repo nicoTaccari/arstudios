@@ -1,5 +1,6 @@
 import React from "react";
 import ReactRotatingText from "react-rotating-text";
+import Video from "../../assets/videos/header-video.mp4";
 
 export const Jumbo = () => {
   return (
@@ -11,10 +12,7 @@ export const Jumbo = () => {
         muted="muted"
         loop="loop"
       >
-        <source
-          src="https://storage.googleapis.com/coverr-main/mp4/Mt_Baker.mp4"
-          type="video/mp4"
-        />
+        <source src={Video} type="video/mp4" />
       </video>
       <div className="container h-100">
         <div className="d-flex h-100 text-center align-items-center">
@@ -31,8 +29,8 @@ export const Jumbo = () => {
                 <span className="wrap"></span>
               </strong>
             </h1>
-            <h1 className="display-3">Video Header</h1>
-            <p className="lead mb-0">With HTML5 Video and Bootstrap 4</p>
+            <h1 className="display-3">April Road Studios</h1>
+            <p className="lead mb-0">based in Barcelona</p>
           </div>
         </div>
       </div>
