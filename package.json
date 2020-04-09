@@ -5,17 +5,15 @@
     "start": "next start"
   },
   "dependencies": {
-    "bootstrap": "^4.4.1",
+    "isomorphic-fetch": "^2.2.1",
     "next": "latest",
     "next-assets-import": "0.0.2",
     "react": "^16.7.0",
-    "react-dom": "^16.7.0",
-    "isomorphic-fetch": "^2.2.1",
-    "jquery": "^3.4.1",
     "react-bootstrap": "^1.0.0-beta.17",
+    "react-dom": "^16.7.0",
+    "react-rotating-text": "^1.4.1",
     "react-router-dom": "^5.1.2",
     "react-router-hash-link": "^1.2.2",
-    "react-rotating-text": "^1.4.1",
     "sass": "1.26.3"
   }
 }

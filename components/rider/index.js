@@ -1,5 +1,5 @@
 import React from "react";
-import { SectionHeader } from "../../common/section-header/index";
+import SectionHeader from "../../common/section-header";
 
 const Rider = () => {
   const title = "Rider";

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useScroll } from "../../services/custom-hooks/on-scroll";
 import Jumbo from "../jumbo";
 import { HashLink as Link } from "react-router-hash-link";
@@ -6,6 +6,7 @@ import LogoWhiteTransparent from "../../assets/images/logo-white-transparent.png
 import LogoBlackWhite from "../../assets/images/logo-black-white.png";
 
 const Navbar = () => {
+  const [mobileMenu, setmobileMenu] = useState(false);
   const scrolled = useScroll();
   let navClass =
     "navbar navbar-expand-lg navbar-dark ftco_navbar fixed-top ftco-navbar-light " +
@@ -26,18 +27,26 @@ const Navbar = () => {
             &nbsp; April Road Studios
           </Link>
           <button
-            className="navbar-toggler"
+            class="navbar-toggler"
+            onClick={() => setmobileMenu(!mobileMenu)}
             type="button"
             data-toggle="collapse"
-            data-target="#ftco-nav"
-            aria-controls="ftco-nav"
+            data-target="#navbarTogglerDemo01"
+            aria-controls="navbarTogglerDemo01"
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span className="navbar-toggler-icon pl-5"></span>
+            <i class="fas fa-bars-lg"></i>
           </button>
 
-          <div className="collapse navbar-collapse" id="ftco-nav">
+          <div
+            className={
+              mobileMenu
+                ? "collapse navbar-collapse show"
+                : "collapse navbar-collapse"
+            }
+            id="ftco-nav"
+          >
             <ul className="navbar-nav ml-auto">
               <li className="nav-item">
                 <Link smooth to="#about" className="nav-link">

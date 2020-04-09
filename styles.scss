@@ -17,6 +17,17 @@
     transition:         all $transition ease;
 }
 
+body {
+    overflow-y: scroll;
+    scrollbar-width: none; /* Firefox */
+	-ms-overflow-style: none;  /* Internet Explorer 10+ */
+}
+body::-webkit-scrollbar { /* WebKit */
+	display: none;
+	width: 0;
+	height: 0;
+}
+
 .container-fluid {
 	padding-right:0 !important;
     padding-left:0 !important;
@@ -186,6 +197,7 @@
 	}
 }
 
+
 /*****Header*****/
 header {
 	position: relative;
@@ -227,14 +239,14 @@ header {
 	z-index: 1;
   }
   
-  @media (pointer: coarse) and (hover: none) {
-	header {
-	  background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
-	}
-	header video {
-	  display: none;
-	}
-  }
+//   @media (pointer: coarse) and (hover: none) {
+// 	header {
+// 	  background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+// 	}
+// 	header video {
+// 	  display: none;
+// 	}
+//   }
 
 /***** Slider *****/
 
@@ -429,5 +441,69 @@ header {
 	}
 }
 
-// Import Bootstrap and its default variables
-@import "~bootstrap/scss/bootstrap.scss";
+//Contact form
+.form-control {
+	height: 43px;
+	border-radius: 30px;
+	font-family: $font-family-sans-serif;
+	&:active, &:focus {
+		border-color: $primary;
+	}
+	&:hover, &:active, &:focus {
+		box-shadow: none!important;
+	}
+}
+
+//footer
+.site-footer {
+	background: lighten($black, 20%);
+	@include media-breakpoint-up(md) {
+		padding: 8em 0;	
+	}
+	.border-top {
+		border-top: 1px solid rgba(255,255,255,.1)!important;
+	}
+	p {
+		color: lighten($black, 45%); 
+	}
+	h2,h3,h4,h5 {
+		color: $white;
+	}
+	a {
+		color: lighten($black, 60%); 
+		&:hover {
+			color: lighten($black, 100%); 
+		}
+	}
+	ul {
+		li {
+			margin-bottom: 10px;
+		}
+	}
+	.footer-heading {
+		font-size: 16px;
+		color: $white;
+	}
+}
+
+// opening hour
+.opening-time{
+    padding-left:0;
+    li{
+      list-style: none;
+      span{
+        float:left;
+        padding-right: 10px;
+        .fa-times{
+          color: red;
+		}
+		.fa-check{
+			color: lightgreen;
+		}
+      }
+        strong{
+          color: whitesmoke
+        }
+    }
+  }
+

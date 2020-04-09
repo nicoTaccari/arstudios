@@ -1,6 +1,6 @@
 import React from "react";
 
-export const SectionHeader = props => {
+const SectionHeader = (props) => {
   const { title, subtitle } = props;
   return (
     <div className="row justify-content-center mb-5">
@@ -11,3 +11,5 @@ export const SectionHeader = props => {
     </div>
   );
 };
+
+export default SectionHeader;

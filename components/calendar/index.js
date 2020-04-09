@@ -1,6 +1,6 @@
 import React from "react";
 
-import { SectionHeader } from "../../common/section-header/index";
+import SectionHeader from "../../common/section-header";
 
 const Calendar = () => {
   const title = "Check when to book a session";

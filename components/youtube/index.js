@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import YotubeService from "../../services/youtube";
 import { VideosCarousel } from "../carousel";
-import { SectionHeader } from "../../common/section-header/index";
+import SectionHeader from "../../common/section-header";
 
 const Youtube = () => {
   const [videos, setvideos] = useState([]);
