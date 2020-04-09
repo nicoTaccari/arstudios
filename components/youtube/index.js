@@ -6,7 +6,7 @@ import SectionHeader from "../../common/section-header";
 const Youtube = () => {
   const [videos, setvideos] = useState([]);
   const subtitle =
-    " Ultimas Grabaciones en nuestro estudio. Te estamos esperando para realizar tu proxima creacion!";
+    " See our latest studio sessions. We are looking forward to working with you in your next creation!";
   const title = "Live Sessions";
 
   useEffect(() => {

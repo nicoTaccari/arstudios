@@ -1,7 +1,9 @@
 {
   "build": {
     "env": {
-      "SENDGRID_API_KEY": "@sendgrid_api_key"
+      "SENDGRID_API_KEY": "@sendgrid_api_key",
+      "YOUTUBE_API_KEY": "@youtube_api_key",
+      "CALENDAR_API_KEY": "@calendar_api_key"
     }
   }
 }

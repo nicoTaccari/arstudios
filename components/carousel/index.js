@@ -9,7 +9,7 @@ export const VideosCarousel = (props) => {
 
   const handleSelect = (selectedIndex, e) => {
     setIndex(selectedIndex);
-    setDirection(e.direction);
+    // setDirection(e.direction);
   };
 
   return (
