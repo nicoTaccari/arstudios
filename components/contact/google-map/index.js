@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import ReactMapGL, { Marker, NavigationControl } from "react-map-gl";
 
+const apikey = process.env.MAPGL_API_KEY;
+
 const marker = {
   lat: 41.4939366,
   long: 2.3633999,
