@@ -103,7 +103,7 @@ const ContactForm = () => {
             name="message"
             id="message"
             cols="30"
-            rows="7"
+            rows="8"
             className="form-control"
             placeholder="Write your notes or questions here..."
             onChange={handleOnChange}
