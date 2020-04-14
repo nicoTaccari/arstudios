@@ -15,7 +15,7 @@ const Contact = () => {
   const subtitle = " Lorem ipsum dolor sit amet, consectetur adipisicing elit.";
   return (
     <section className="section bg-light" id="contact">
-      <div className="container-fluid">
+      <div className="container">
         <SectionHeader title={title} subtitle={subtitle} />
         <div className="row justifi-content-center mb-5">
           <div className="col-md-12">
