@@ -13,6 +13,7 @@
     "react": "^16.7.0",
     "react-bootstrap": "^1.0.0-beta.17",
     "react-dom": "^16.7.0",
+    "react-map-gl": "^5.2.3",
     "react-rotating-text": "^1.4.1",
     "react-router-dom": "^5.1.2",
     "react-router-hash-link": "^1.2.2",

@@ -11,6 +11,10 @@ class MyDocument extends Document {
       <Html>
         <Head>
           <link
+            href="https://api.mapbox.com/mapbox-gl-js/v0.51.0/mapbox-gl.css"
+            rel="stylesheet"
+          />
+          <link
             rel="stylesheet"
             href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
             integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
