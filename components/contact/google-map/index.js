@@ -26,7 +26,7 @@ const Map = () => {
     <ReactMapGL
       {...viewport}
       width="100vw"
-      height="100vh"
+      height="50vh"
       mapStyle="mapbox://styles/mapbox/streets-v11"
       mapboxApiAccessToken={apikey}
       onViewportChange={(viewport) => setViewport(viewport)}
