@@ -15,13 +15,15 @@ const Contact = () => {
   const subtitle = " Lorem ipsum dolor sit amet, consectetur adipisicing elit.";
   return (
     <section className="section bg-light" id="contact">
-      <div className="container">
+      <div className="container-fluid">
         <SectionHeader title={title} subtitle={subtitle} />
-        <div className="row justifi-content-center mb-5">
+        <div className="row justify-content-center mb-5">
           <div className="col-md-12">
             <Map />
           </div>
         </div>
+      </div>
+      <div className="container">
         <div className="row">
           <div className="col-md-7 mb-5">
             <ContactForm />

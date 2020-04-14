@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import ReactMapGL, { Marker, NavigationControl } from "react-map-gl";
 
-const apikey = process.env.MAPGL_API_KEY;
+const apikey =
+  "pk.eyJ1Ijoibmljb3RhY2NhcmkiLCJhIjoiY2s4eGpmNmhuMHc1YjNmc2ZvZnIzM3hoZiJ9.Ygh01QDRFqKGyfa0OAVKvg";
 
 const marker = {
   lat: 41.4939366,
@@ -27,7 +28,7 @@ const Map = () => {
   return (
     <ReactMapGL
       {...viewport}
-      width="100vw"
+      width="100%"
       height="50vh"
       mapStyle="mapbox://styles/mapbox/streets-v11"
       mapboxApiAccessToken={apikey}
