@@ -547,7 +547,7 @@ header .overlay {
 
 .navbar-toggler:not(.collapsed) span:nth-child(1) {
   position: relative;
-  right: 12px;
+  left: 0px;
   top: 10px;
   -webkit-transform: rotate(135deg);
   -moz-transform: rotate(135deg);
@@ -564,7 +564,7 @@ header .overlay {
 
 .navbar-toggler:not(.collapsed) span:nth-child(3) {
   position: relative;
-  right: 10px;
+  left: 0px;
   top: -12px;
   -webkit-transform: rotate(-135deg);
   -moz-transform: rotate(-135deg);
