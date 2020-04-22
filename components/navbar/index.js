@@ -9,7 +9,7 @@ const Navbar = () => {
   const [mobileMenu, setmobileMenu] = useState(false);
   const scrolled = useScroll();
   let navClass =
-    "navbar navbar-expand-lg navbar-dark ftco_navbar fixed-top ftco-navbar-light " +
+    "navbar navbar-toggleable-sm navbar-expand-lg navbar-dark ftco_navbar fixed-top ftco-navbar-light " +
     (scrolled ? "scrolled awake" : "");
   return (
     <>
@@ -26,8 +26,13 @@ const Navbar = () => {
             />
             &nbsp; April Road Studios
           </Link>
+
           <button
-            class="navbar-toggler"
+            className={
+              mobileMenu
+                ? "navbar-toggler navbar-toggler-right"
+                : "navbar-toggler navbar-toggler-right collapsed"
+            }
             onClick={() => setmobileMenu(!mobileMenu)}
             type="button"
             data-toggle="collapse"
@@ -36,7 +41,9 @@ const Navbar = () => {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <i class="fas fa-bars-lg"></i>
+            <span></span>
+            <span></span>
+            <span></span>
           </button>
 
           <div

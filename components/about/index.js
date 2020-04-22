@@ -10,8 +10,8 @@ const About = () => {
     calidad con el mejor ambiente a nuestros clientes en todas sus ideas creativas,\
     desde su producción hasta incluso descubriendo nuevos talentos, para así contribuir\
     con la riqueza artística de nuestra generación.";
-  
-    return (
+
+  return (
     <section className="section bg-light" id="about">
       <SectionHeader title={title} subtitle={subtitle} />
     </section>
