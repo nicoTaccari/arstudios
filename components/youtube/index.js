@@ -9,18 +9,20 @@ const Youtube = () => {
     " See our latest studio sessions. We are looking forward to working with you in your next creation!";
   const title = "Live Sessions";
 
-  useEffect(() => {
-    YotubeService.getVideos()
-      .then((responseJson) => {
-        // console.log(responseJson.items);
-        setvideos(
-          responseJson.items.map(
-            (item) => "https://www.youtube.com/embed/" + item.id.videoId
-          )
-        );
-      })
-      .catch((err) => console.error(err));
-  }, []);
+  // useEffect(() => {
+  //   YotubeService.getVideos()
+  //     .then((responseJson) => {
+  //       console.log(responseJson.items);
+  //       setvideos(
+  //         responseJson.items.map((item, index) => ({
+  //           url: "https://www.youtube.com/embed/" + item.id.videoId,
+  //           index: index,
+  //           thumbnail_url: item.snippet.thumbnails.default.url,
+  //         }))
+  //       );
+  //     })
+  //     .catch((err) => console.error(err));
+  // }, []);
 
   return (
     <section className="section" id="sessions">

@@ -2,11 +2,18 @@ import React from "react";
 import SectionHeader from "../../common/section-header";
 import Address from "./address";
 import ContactForm from "./form";
+import Spinner from "react-bootstrap/Spinner";
 
 import dynamic from "next/dynamic";
 
 const Map = dynamic(() => import("./google-map"), {
-  loading: () => <p>Loading...</p>,
+  loading: () => (
+    <div className="row justify-content-center">
+      <Spinner animation="border" role="status">
+        <span className="sr-only">Loading...</span>
+      </Spinner>
+    </div>
+  ),
   ssr: false,
 });
 
